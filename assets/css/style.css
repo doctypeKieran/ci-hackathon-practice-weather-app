@@ -29,7 +29,7 @@ body {
 
 /* Container for the app */
 #app-container {
-    background-color: #fff;
+    background-color: #EFE7DA;
     min-height: 100vh;
     border-radius: 40px;
 }
@@ -78,9 +78,64 @@ header {
     font-size: 40px;
 }
 
+/* Grid layout for current day */
+.current-day-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .current-day-img {
     width: 100px;
 }
 .current-day-img-small {
     width: 60px;
+}
+
+#todays-temp,
+#wind-speed {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Grid layout for hours of current day */
+.hourly-grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: .5rem;
+}
+
+/* Styles for hours of current day */
+.current-day-hourly-img {
+    width: 50px;
+}
+
+/* Styles for hourly boxes */
+.hourly-grid-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 16px;
+    height: 180px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hourly-grid-container div p {
+    margin: 0;
+}
+
+.hourly-grid-container > div > p {
+    font-weight: 600;
+}
+
+.hour-info-box {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.small-icon {
+    width: 20px;
 }
