@@ -9,18 +9,50 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Personal styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6b2825af5a.js" crossorigin="anonymous"></script>
     <title>Practice Weather App</title>
 </head>
 
 <body>
-    <h1>Weather App</h1>
-    <div class="container">
-        <input type="text" id="city" placeholder="Enter a city">
-        <button id="search-btn">Search</button>
-        <div id="weather-info">
-            
-        </div>
-    </div>
+    <main class="container" id="app-container">
+        <h1 class="logo-heading text-center pt-5">
+            WeatherSense
+        </h1>
+        <p class="logo-motto text-center mb-4">
+            Stay fit, rain or shine!
+        </p>
+
+        <!-- Search input and button -->
+        <header>
+            <input id="search-input" type="text" placeholder="Enter a City here!">
+            <button class="btn" id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </header>
+
+        <!-- Forecast for current day -->
+        <section class="row current-day-section">
+            <div class="col-12">
+                <!-- City entered here -->
+                <h2 class="day-heading" id="city">Swansea, GB</h2>
+            </div>
+            <!-- Current day information goes here -->
+            <div id="current-day" class="col-12 col-md-6 col-lg-4">
+                <img class="current-day-img" src="./assets/images/sun.png" alt="">
+                <p>Broken clouds</p>
+                <p>Humidity: 89%</p>
+            </div>
+            <div id="todays-temp" class="col-12 col-md-6 col-lg-4">
+                <img class="current-day-img-small" src="./assets/images/thermometer.png" alt="">
+                <p>Temp: 12.93&deg;</p>
+            </div>
+            <div id="wind-speed" class="col-12 col-md-6 col-lg-4">
+                <img class="current-day-img-small" src="./assets/images/wind.png" alt="">
+                <p>Wind speed: 0.45mph</p>
+            </div>
+        </section>
+    </main>
 
     <script src="assets/js/script.js"></script>
 </body>

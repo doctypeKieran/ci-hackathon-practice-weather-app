@@ -1,33 +1,86 @@
+/* Google Fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* General styling */
+
+body,
+html,
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+    background-color: #0E4749;
+    padding: 1rem 0;
 }
 
-.container {
-    margin-top: 50px;
+/* Logo heading and motto */
+.logo-heading {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #E55812;
 }
 
-#city {
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.logo-motto {
+    font-size: 20px;
+}
+
+/* Container for the app */
+#app-container {
+    background-color: #fff;
+    min-height: 100vh;
+    border-radius: 40px;
+}
+
+/* Search bar and button */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#search-input {
+    padding: 8px;
+    width: 400px;
+    border: 1px solid #E55812;
+    border-radius: 16px;
+    height: 50px;
 }
 
 #search-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-#search-btn:hover {
-    background-color: #0099ff;
+    border: 1px solid #E55812;
+    background-color: #fff;
+    padding: 8px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#weather-info {
-    margin-top: 20px;
-    font-size: 24px;
+#search-btn i {
+    font-size: 20px;
+    color: #E55812;
+}
+
+/* Current day section */
+.current-day-section {
+    padding: 0 10rem;
+    margin-top: 2rem;
+}
+
+.day-heading {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.current-day-img {
+    width: 100px;
+}
+.current-day-img-small {
+    width: 60px;
 }
